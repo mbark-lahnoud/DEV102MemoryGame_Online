@@ -89,7 +89,3 @@ Mon objectif, après avoir bien maîtrisé Python et JavaScript, est de créer u
 </p>
 
 ---
-
-## 📜 Licence
-
-Projet éducatif – usage libre pour apprentissage.
