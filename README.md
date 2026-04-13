@@ -18,7 +18,7 @@
 
 ## 🧠 À propos
 
-⚡ Ce site de jeu en ligne a été développé avec l’aide de l’intelligence artificielle comme support d’apprentissage.  
+Ce site de jeu en ligne a été développé avec l’aide de l’intelligence artificielle comme support d’apprentissage.  
 
 Il s’agit d’une première version destinée à tester le fonctionnement du jeu directement en ligne.  
 
