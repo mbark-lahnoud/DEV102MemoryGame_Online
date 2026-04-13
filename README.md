@@ -47,13 +47,14 @@ Mon objectif, après avoir bien maîtrisé Python et JavaScript, est de créer u
 
 ## ✨ Fonctionnalités
 
-- Animation flip des cartes  
-- Timer ⏱  
-- Système de score  
-- Mode multijoueur avec tour  
-- Chrono par joueur ⏳  
-- Écran de victoire animé 🏆  
-- Best score (localStorage)  
+🃏 Animation flip des cartes
+⏱ Timer
+🎯 Système de score
+👥 Mode multijoueur avec tour
+⏳ Chrono par joueur
+🏆 Écran de victoire animé
+💾 Best score (localStorage)
+
 
 ---
 
