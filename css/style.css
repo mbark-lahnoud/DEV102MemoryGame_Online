@@ -80,6 +80,157 @@ h1 {
 /* ===================== */
 
 
+
+/* ===================== */
+/* MODE SELECTION */
+/* ===================== */
+
+.mode-selection {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+/* ===================== */
+/* BUTTON BASE */
+/* ===================== */
+
+.mode-btn {
+    position: relative;
+    overflow: hidden;
+
+    padding: 15px 35px;
+    border-radius: 15px;
+    border: none;
+
+    cursor: pointer;
+    color: white;
+
+    background: linear-gradient(135deg, #111, #1a1a1a);
+
+    box-shadow: 0 0 15px rgba(255,0,0,0.4);
+    transition: all 0.4s ease;
+
+    font-size: 16px;
+    letter-spacing: 1px;
+
+    z-index: 1;
+}
+
+/* TEXTE + ICONE ALIGNEMENT */
+.mode-btn span {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    position: relative;
+    z-index: 2;
+}
+
+/* ICÔNES */
+.mode-btn i {
+    font-size: 18px;
+    transition: 0.3s ease;
+}
+
+/* ===================== */
+/* EFFET LUMIÈRE */
+/* ===================== */
+
+.mode-btn::before {
+    content: "";
+    position: absolute;
+
+    top: 0;
+    left: -100%;
+
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 0, 0, 0.5),
+        transparent
+    );
+
+    transition: 0.6s;
+}
+
+/* ===================== */
+/* HOVER */
+/* ===================== */
+
+.mode-btn:hover::before {
+    left: 100%;
+}
+
+.mode-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 
+        0 0 25px red,
+        0 0 50px rgba(255,0,0,0.5);
+}
+
+/* animation icône */
+.mode-btn:hover i {
+    transform: rotate(-5deg) scale(1.1);
+}
+
+/* ===================== */
+/* CLICK */
+/* ===================== */
+
+.mode-btn:active {
+    transform: scale(0.95);
+}
+
+/* ===================== */
+/* SOLO STYLE */
+/* ===================== */
+
+.solo {
+    border: 2px solid rgb(121, 42, 56);
+}
+
+.solo i {
+    color:rgb(121, 42, 56);
+}
+
+.solo:hover {
+    box-shadow: 
+        0 0 25px rgb(121, 42, 56),
+        0 0 50px rgba(121, 42, 57, 0.527);
+}
+
+/* ===================== */
+/* MULTI STYLE */
+/* ===================== */
+
+.multi {
+    border: 1px solid rgb(225, 82, 122);
+}
+
+.multi i {
+    color: rgb(225, 82, 122);
+}
+
+.multi:hover {
+    box-shadow: 
+        0 0 25px rgb(225, 82, 122),
+        0 0 50px rgba(225, 82, 122, 0.553);
+}
+
+.solo:hover {
+    transform: scale(1.03) rotate(-0.5deg);
+}
+.multi:hover {
+    transform: scale(1.03) rotate(0.5deg);
+}
+
 /* ===================== */
 /* INPUT */
 /* ===================== */
