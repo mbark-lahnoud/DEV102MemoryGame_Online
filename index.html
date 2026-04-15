@@ -38,11 +38,24 @@
     <p>Choisissez votre mode de jeu 🎮</p>
 
     <!-- BOUTONS -->
+    <!-- BOUTONS -->
     <div class="mode-selection">
 
         <button class="mode-btn solo" onclick="goSolo()">
-            🎯 Mode Solo
+            <span>
+                <i class="fas fa-crosshairs"></i>
+                Mode Solo
+            </span>
         </button>
+    
+        <button class="mode-btn multi" onclick="goMulti()">
+            <span>
+                <i class="fas fa-users"></i>
+                Mode Multijoueur
+            </span>
+        </button>
+    
+    </div>
 
         <button class="mode-btn multi" onclick="goMulti()">
             👥 Mode Multijoueur
