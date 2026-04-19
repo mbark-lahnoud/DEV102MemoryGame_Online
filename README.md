@@ -8,7 +8,7 @@ Welcome to DEV102 MemoryGame WebSite- I hope you enjoy it 🚀
 
 <p align="center">
   <a href="https://mbark-lahnoud.github.io/DEV102MemoryGame/" target="_blank">
-    <img src="https://img.shields.io/badge/DEV102%20MemoryGame-VISITER%20LE%20SITE-red?style=for-the-badge&logo=gamepad&logoColor=white">
+    <img src="https://img.shields.io/badge/DEV102-MemoryGame-blue?style=for-the-badge&logo=gamepad&logoColor=white&colorA=black">
   </a>
 </p>
 
