@@ -1,10 +1,12 @@
-# 🎮 DEV102 MemoryGame
+## 🎮 Visiter le site
 
 <p align="center">
-  <img src="https://img.shields.io/badge/DEV102-MemoryGame-black?style=for-the-badge&logo=gamepad&logoColor=red">
+  <a href="https://mbark-lahnoud.github.io/DEV102MemoryGame/" target="_blank">
+    <img src="https://img.shields.io/badge/DEV102%20MemoryGame-VISITER%20LE%20SITE-red?style=for-the-badge&logo=gamepad&logoColor=white">
+  </a>
 </p>
 
----
+--- 
 
 ## 🎮 Jouer en ligne
 
