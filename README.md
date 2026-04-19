@@ -1,6 +1,6 @@
 # 🎮 DEV102 MemoryGame
 
-Welcome to DEV102 MemoryGame WebSite- I hope you enjoy it 🚀
+Welcome to DEV102 MemoryGame WebSite; I hope you enjoy it 🚀
 
 ---
 
