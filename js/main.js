@@ -1,3 +1,7 @@
+/* VARIABLES GLOBALES */
+
+const buttons = document.querySelectorAll(".mode-btn");
+
 /* NAVIGATION */
 
 function navigateTo(page) {
