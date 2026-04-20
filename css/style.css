@@ -168,11 +168,8 @@ h1 {
     left: 100%;
 }
 
-.mode-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 
-        0 0 25px red,
-        0 0 50px rgba(255,0,0,0.5);
+.mode-btn {
+    transition: transform 0.15s ease, box-shadow 0.3s ease;
 }
 
 /* animation icône */
@@ -180,13 +177,6 @@ h1 {
     transform: rotate(-5deg) scale(1.1);
 }
 
-/* ===================== */
-/* CLICK */
-/* ===================== */
-
-.mode-btn:active {
-    transform: scale(0.95);
-}
 
 /* ===================== */
 /* SOLO STYLE */
