@@ -19,14 +19,9 @@ function goMulti() {
     navigateTo("multi.html");
 }
 
-/* ===================== */
 /* ANIMATION CLICK */
-/* ===================== */
 
 function animateClick() {
-
-    const buttons = document.querySelectorAll(".mode-btn");
-
     buttons.forEach(btn => {
         btn.style.transform = "scale(0.95)";
         setTimeout(() => {
@@ -35,11 +30,9 @@ function animateClick() {
     });
 }
 
-/* ===================== */
-/* BONUS : HOVER SOUND (OPTIONNEL) */
-/* ===================== */
+/* HOVER EFFECT */
 
-document.querySelectorAll(".mode-btn").forEach(btn => {
+buttons.forEach(btn => {
     btn.addEventListener("mouseenter", () => {
         btn.style.boxShadow = "0 0 25px red";
     });
@@ -49,9 +42,7 @@ document.querySelectorAll(".mode-btn").forEach(btn => {
     });
 });
 
-/* ===================== */
 /* LOAD EFFECT */
-/* ===================== */
 
 window.addEventListener("load", () => {
     document.body.style.opacity = "1";
