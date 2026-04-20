@@ -1,19 +1,18 @@
-/* ===================== */
 /* NAVIGATION */
-/* ===================== */
 
-function goSolo() {
+function navigateTo(page) {
     animateClick();
+
     setTimeout(() => {
-        window.location.href = "solo.html";
+        window.location.href = page;
     }, 200);
+}
+function goSolo() {
+    navigateTo("solo.html");
 }
 
 function goMulti() {
-    animateClick();
-    setTimeout(() => {
-        window.location.href = "multi.html";
-    }, 200);
+    navigateTo("multi.html");
 }
 
 /* ===================== */
