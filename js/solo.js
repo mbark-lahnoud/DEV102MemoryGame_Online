@@ -1,6 +1,4 @@
-/* ===================== */
 /* VARIABLES */
-/* ===================== */
 
 let player = "";
 let firstCard = null;
@@ -15,18 +13,15 @@ let interval;
 
 let bestScore = localStorage.getItem("bestScore") || null;
 
-/* ===================== */
 /* DOM CACHE (PERF) */
-/* ===================== */
 
 const gameContainer = document.getElementById("game");
 const timerEl = document.getElementById("timer");
 const attemptsEl = document.getElementById("attempts");
 const playerNameEl = document.getElementById("playerName");
 
-/* ===================== */
 /* INSTRUCTIONS */
-/* ===================== */
+
 function showInstructions() {
     const box = document.getElementById("instructions");
     if (!box) return;
@@ -37,9 +32,8 @@ function showInstructions() {
     setTimeout(() => box.classList.add("hide"), 5000);
     setTimeout(() => box.style.display = "none", 5800);
 }
-/* ===================== */
+
 /* START GAME */
-/* ===================== */
 
 function startSolo() {
     showInstructions();
@@ -65,12 +59,24 @@ function startSolo() {
     createBoard();
 }
 
-/* ===================== */
+/* RESET GAME */
+
+function resetGame() {
+    firstCard = null;
+    secondCard = null;
+    lockBoard = false;
+
+    attempts = 0;
+    matches = 0;
+    timer = 0;
+
+    clearInterval(interval);
+    gameContainer.innerHTML = "";
+}
+
 /* CREATE BOARD */
-/* ===================== */
 
 function createBoard() {
-
     let images = [];
 
     for (let i = 1; i <= 40; i++) {
@@ -83,12 +89,9 @@ function createBoard() {
     cards.forEach(img => createCard(img));
 }
 
-/* ===================== */
 /* CREATE CARD */
-/* ===================== */
 
 function createCard(img) {
-
     const card = document.createElement("div");
     card.classList.add("card");
 
@@ -101,17 +104,14 @@ function createCard(img) {
 
     card.addEventListener("click", () => flipCard(card, img));
 
-    document.getElementById("game").appendChild(card);
+    gameContainer.appendChild(card);
 }
 
-/* ===================== */
 /* FLIP CARD */
-/* ===================== */
 
 function flipCard(card, img) {
-
     if (lockBoard) return;
-    if (card === firstCard?.card) return;
+    if (firstCard && card === firstCard.card) return;
     if (card.classList.contains("matched")) return;
 
     card.classList.add("flip");
@@ -127,28 +127,23 @@ function flipCard(card, img) {
     attempts++;
     updateStats();
 
-    setTimeout(checkMatch, 1000);
+    setTimeout(checkMatch, 700);
 }
 
-/* ===================== */
 /* CHECK MATCH */
-/* ===================== */
 
 function checkMatch() {
-
     if (firstCard.img === secondCard.img) {
 
         firstCard.card.classList.add("matched");
         secondCard.card.classList.add("matched");
 
-        // 🔒 bloquer totalement interaction
         firstCard.card.style.pointerEvents = "none";
         secondCard.card.style.pointerEvents = "none";
 
         matches++;
 
     } else {
-
         firstCard.card.classList.remove("flip");
         secondCard.card.classList.remove("flip");
     }
@@ -162,35 +157,25 @@ function checkMatch() {
     if (matches === 10) endGame();
 }
 
-/* ===================== */
 /* UPDATE STATS */
-/* ===================== */
 
 function updateStats() {
+    attemptsEl.innerText = "🎯 " + attempts;
 
-    document.getElementById("attempts").innerText = "🎯 " + attempts;
-
-    document.getElementById("playerName").innerText =
+    playerNameEl.innerText =
         player + (bestScore ? " | 🏆 " + bestScore : "");
 }
 
-/* ===================== */
 /* END GAME */
-/* ===================== */
 
 function endGame() {
-
     clearInterval(interval);
-
-    // 🏆 BEST SCORE
-    let bestScore = localStorage.getItem("bestScore");
 
     if (!bestScore || attempts < bestScore) {
         bestScore = attempts;
         localStorage.setItem("bestScore", bestScore);
     }
 
-    // 🎉 AFFICHAGE ÉCRAN
     document.getElementById("winTitle").innerText = "🏆 Bravo " + player;
 
     document.getElementById("winText").innerText =
@@ -200,13 +185,20 @@ function endGame() {
 
     document.getElementById("winScreen").classList.remove("hidden");
 }
-/* ===================== */
-/* SHUFFLE */
-/* ===================== */
+
+/* SHUFFLE (PRO) */
 
 function shuffle(arr) {
-    return arr.sort(() => Math.random() - 0.5);
+    for (let i = arr.length - 1; i > 0; i--) {
+        let j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
+    }
+    return arr;
 }
+
+/* RESTART */
+
 function restartGame() {
-    location.reload();
+    document.getElementById("winScreen").classList.add("hidden");
+    startSolo();
 }
