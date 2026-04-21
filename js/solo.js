@@ -37,8 +37,6 @@ function showInstructions() {
     setTimeout(() => box.classList.add("hide"), 5000);
     setTimeout(() => box.style.display = "none", 5800);
 }
-
-
 /* ===================== */
 /* START GAME */
 /* ===================== */
@@ -56,17 +54,12 @@ function startSolo() {
 
     player = name;
 
-    document.getElementById("game").innerHTML = "";
-    attempts = 0;
-    matches = 0;
-    timer = 0;
-
+    resetGame();
     updateStats();
 
-    clearInterval(interval);
     interval = setInterval(() => {
         timer++;
-        document.getElementById("timer").innerText = "⏱ " + timer + "s";
+        timerEl.innerText = "⏱ " + timer + "s";
     }, 1000);
 
     createBoard();
