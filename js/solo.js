@@ -13,7 +13,16 @@ let matches = 0;
 let timer = 0;
 let interval;
 
-let bestScore = localStorage.getItem("bestScore");
+let bestScore = localStorage.getItem("bestScore") || null;
+
+/* ===================== */
+/* DOM CACHE (PERF) */
+/* ===================== */
+
+const gameContainer = document.getElementById("game");
+const timerEl = document.getElementById("timer");
+const attemptsEl = document.getElementById("attempts");
+const playerNameEl = document.getElementById("playerName");
 
 
 function showInstructions() {
