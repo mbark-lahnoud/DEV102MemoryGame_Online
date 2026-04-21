@@ -24,25 +24,18 @@ const timerEl = document.getElementById("timer");
 const attemptsEl = document.getElementById("attempts");
 const playerNameEl = document.getElementById("playerName");
 
-
+/* ===================== */
+/* INSTRUCTIONS */
+/* ===================== */
 function showInstructions() {
     const box = document.getElementById("instructions");
-
     if (!box) return;
 
-    // reset au cas où
     box.style.display = "block";
     box.classList.remove("hide");
 
-    // ⏳ disparaît après 5s
-    setTimeout(() => {
-        box.classList.add("hide");
-    }, 5000);
-
-    // 🔥 supprime complètement après animation
-    setTimeout(() => {
-        box.style.display = "none";
-    }, 5800);
+    setTimeout(() => box.classList.add("hide"), 5000);
+    setTimeout(() => box.style.display = "none", 5800);
 }
 
 
