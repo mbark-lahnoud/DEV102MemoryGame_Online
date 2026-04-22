@@ -143,7 +143,7 @@ function flipCard(card, img) {
     attempts++;
     updateStats();
 
-    setTimeout(checkMatch, 1000);
+    setTimeout(checkMatch, 600);
 }
 
 /* ===================== */
