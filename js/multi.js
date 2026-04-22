@@ -286,19 +286,3 @@ function shuffle(arr) {
 function restartGame() {
     location.reload();
 }
-function showInstructions() {
-
-    const box = document.getElementById("instructions");
-
-    if (!box) return;
-
-    // ⏳ disparaît après 6 secondes
-    setTimeout(() => {
-        box.classList.add("fade-out");
-    }, 6000);
-
-    // 🔥 supprime totalement après animation
-    setTimeout(() => {
-        box.style.display = "none";
-    }, 7000);
-}
