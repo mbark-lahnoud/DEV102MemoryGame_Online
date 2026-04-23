@@ -53,9 +53,13 @@ function stopTimer(interval) {
 /* UI HELPERS */
 /* ===================== */
 
+function $(id) {
+    return document.getElementById(id);
+}
+
 function updateText(id, text) {
-    const el = document.getElementById(id);
-    if (el) el.innerText = text;
+    const el = $(id);
+    if (el) el.textContent = text;
 }
 
 function addClass(id, className) {
