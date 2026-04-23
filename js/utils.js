@@ -2,9 +2,10 @@
 /* VALIDATION NOM */
 /* ===================== */
 
+const NAME_REGEX = /^[A-Za-z]{3,10}$/;
+
 function validateName(name) {
-    const regex = /^[A-Za-z]{3,10}$/;
-    return regex.test(name);
+    return NAME_REGEX.test(name);
 }
 
 /* ===================== */
