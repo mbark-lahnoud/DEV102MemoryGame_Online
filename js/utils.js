@@ -1,6 +1,4 @@
-/* ===================== */
 /* VALIDATION NOM */
-/* ===================== */
 
 const NAME_REGEX = /^[A-Za-z]{3,10}$/;
 
@@ -8,9 +6,7 @@ function validateName(name) {
     return NAME_REGEX.test(name);
 }
 
-/* ===================== */
 /* SHUFFLE (FIABLE) */
-/* ===================== */
 
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -20,9 +16,7 @@ function shuffleArray(array) {
     return array;
 }
 
-/* ===================== */
 /* LOCAL STORAGE */
-/* ===================== */
 
 function saveData(key, value) {
     localStorage.setItem(key, JSON.stringify(value));
@@ -33,9 +27,7 @@ function loadData(key) {
     return data ? JSON.parse(data) : null;
 }
 
-/* ===================== */
 /* TIMER */
-/* ===================== */
 
 function startTimer(callback) {
     let time = 0;
@@ -49,9 +41,7 @@ function stopTimer(interval) {
     clearInterval(interval);
 }
 
-/* ===================== */
 /* UI HELPERS */
-/* ===================== */
 
 function $(id) {
     return document.getElementById(id);
@@ -72,9 +62,7 @@ function removeClass(id, className) {
     if (el) el.classList.remove(className);
 }
 
-/* ===================== */
 /* RANDOM IMAGES */
-/* ===================== */
 
 function getRandomImages(count = 10, max = 40) {
 
