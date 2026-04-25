@@ -1,6 +1,4 @@
-/* ===================== */
 /* VARIABLES */
-/* ===================== */
 
 let players = ["", ""];
 let scores = [0, 0];
@@ -41,9 +39,7 @@ function showInstructions() {
 }
 
     
-/* ===================== */
 /* START GAME */
-/* ===================== */
 
 function startMulti() {
     showInstructions();
@@ -99,9 +95,7 @@ function createBoard() {
     cards.forEach(img => createCard(img));
 }
 
-/* ===================== */
 /* CREATE CARD */
-/* ===================== */
 
 function createCard(img) {
 
@@ -120,9 +114,7 @@ function createCard(img) {
     document.getElementById("game").appendChild(card);
 }
 
-/* ===================== */
 /* FLIP CARD */
-/* ===================== */
 
 function flipCard(card, img) {
 
@@ -146,9 +138,7 @@ function flipCard(card, img) {
     setTimeout(checkMatch, 600);
 }
 
-/* ===================== */
 /* CHECK MATCH */
-/* ===================== */
 
 function checkMatch() {
 
@@ -183,9 +173,7 @@ function checkMatch() {
     if (matches === 10) endGame();
 }
 
-/* ===================== */
 /* TIMER TOUR */
-/* ===================== */
 
 function resetTurnTimer() {
 
@@ -209,9 +197,7 @@ function updateTurnTimer() {
     document.getElementById("turnTimer").innerText = "⏳ " + turnTime;
 }
 
-/* ===================== */
 /* SWITCH PLAYER */
-/* ===================== */
 
 function switchPlayer() {
 
@@ -225,9 +211,7 @@ function switchPlayer() {
     resetTurnTimer();
 }
 
-/* ===================== */
 /* UPDATE STATS */
-/* ===================== */
 
 function updateStats() {
 
@@ -250,9 +234,7 @@ function updateStats() {
     );
 }
 
-/* ===================== */
 /* END GAME */
-/* ===================== */
 
 function endGame() {
 
@@ -276,9 +258,8 @@ function endGame() {
 
     document.getElementById("winScreen").classList.remove("hidden");
 }
-/* ===================== */
+
 /* SHUFFLE */
-/* ===================== */
 
 function shuffle(arr) {
     for (let i = arr.length - 1; i > 0; i--) {
