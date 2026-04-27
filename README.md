@@ -66,11 +66,11 @@ Mon objectif, après avoir bien maîtrisé Python et JavaScript, est de créer u
 ---
 
 ## 🧩 Game Rules
+- 🎴 Flip two cards at a time
+- ✅ If they match → keep them
+- ❌ If not → cards flip back
+- 🏆 The player with the least attempts wins
 
-- Flip two cards at a time  
-- If they match → keep them  
-- If not → cards flip back  
-- The player with the least attempts wins  
 ---
 
 ## 👨‍💻 Auteur
