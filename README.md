@@ -37,8 +37,13 @@ Mon objectif, après avoir bien maîtrisé Python et JavaScript, est de créer u
 ## 🎮 Modes de jeu
 
 <p align="center">
-  <img src="https://img.shields.io/badge/Mode-Solo-red?style=for-the-badge">
-  <img src="https://img.shields.io/badge/Mode-Multijoueur-black?style=for-the-badge">
+  <a href="https://mbark-lahnoud.github.io/DEV102MemoryGame_Online/solo.html">
+    <img src="https://img.shields.io/badge/Mode-Solo-red?style=for-the-badge">
+  </a>
+
+  <a href="https://mbark-lahnoud.github.io/DEV102MemoryGame_Online/multi.html">
+    <img src="https://img.shields.io/badge/Mode-Multijoueur-black?style=for-the-badge">
+  </a>
 </p>
 
 ---
