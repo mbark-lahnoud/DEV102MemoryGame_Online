@@ -78,10 +78,12 @@ Mon objectif, après avoir bien maîtrisé Python et JavaScript, est de créer u
 
 ---
 
-## 👨‍💻 Auteur
+## 👨‍💻 Author
 
 <p align="center">
-  <img src="https://img.shields.io/badge/M'BARK-LAHNOUD-red?style=for-the-badge">
+  <a href="https://github.com/mbark-lahnoud">
+    <img src="https://img.shields.io/badge/M'BARK-LAHNOUD-red?style=for-the-badge&logo=github&logoColor=white">
+  </a>
 </p>
 
 ---
