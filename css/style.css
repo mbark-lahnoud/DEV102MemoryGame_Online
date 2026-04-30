@@ -1,6 +1,5 @@
-/* ===================== */
 /* GLOBAL */
-/* ===================== */
+
 * {
     box-sizing: border-box;
 }
@@ -22,9 +21,8 @@ body {
     100% {background-position: 0% 50%;}
 }
 
-/* ===================== */
+
 /* NAVBAR */
-/* ===================== */
 
 nav {
     width: 100%;
@@ -64,9 +62,7 @@ nav ul li a:hover {
     text-shadow: 0 0 10px red;
 }
 
-/* ===================== */
 /* CONTAINER */
-/* ===================== */
 
 .container {
     margin-top: 140px;
@@ -78,9 +74,7 @@ h1 {
     text-shadow: 0 0 10px red;
 }
 
-/* ===================== */
 /* MODE SELECTION */
-/* ===================== */
 
 .mode-selection {
     display: flex;
@@ -90,9 +84,7 @@ h1 {
     margin-top: 30px;
 }
 
-/* ===================== */
 /* BUTTON BASE */
-/* ===================== */
 
 .mode-btn {
     position: relative;
@@ -128,14 +120,13 @@ h1 {
 }
 
 /* ICÔNES */
+
 .mode-btn i {
     font-size: 18px;
     transition: 0.3s ease;
 }
 
-/* ===================== */
 /* EFFET LUMIÈRE */
-/* ===================== */
 
 .mode-btn::before {
     content: "";
@@ -157,9 +148,7 @@ h1 {
     transition: 0.6s;
 }
 
-/* ===================== */
 /* HOVER */
-/* ===================== */
 
 .mode-btn:hover::before {
     left: 100%;
