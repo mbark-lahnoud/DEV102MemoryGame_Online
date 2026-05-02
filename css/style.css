@@ -164,9 +164,7 @@ h1 {
 }
 
 
-/* ===================== */
 /* SOLO STYLE */
-/* ===================== */
 
 .solo {
     border: 2px solid rgb(121, 42, 56);
@@ -182,9 +180,7 @@ h1 {
         0 0 50px rgba(121, 42, 57, 0.527);
 }
 
-/* ===================== */
 /* MULTI STYLE */
-/* ===================== */
 
 .multi {
     border: 1px solid rgb(225, 82, 122);
@@ -207,9 +203,7 @@ h1 {
     transform: scale(1.03) rotate(0.5deg);
 }
 
-/* ===================== */
 /* INPUT */
-/* ===================== */
 
 .players-input input {
     padding: 12px;
@@ -221,9 +215,7 @@ h1 {
     font-size: 16px;
 }
 
-/* ===================== */
 /* BUTTON */
-/* ===================== */
 
 .download-btn {
     padding: 12px 35px;
@@ -241,9 +233,7 @@ h1 {
     box-shadow: 0 0 35px red;
 }
 
-/* ===================== */
 /* STATS */
-/* ===================== */
 
 .stats {
     display: flex;
@@ -270,9 +260,7 @@ h1 {
     border: 2px solid yellow;
 }
 
-/* ===================== */
 /* GAME GRID */
-/* ===================== */
 
 #game {
     display: grid;
@@ -282,9 +270,7 @@ h1 {
     margin-top: 20px;
 }
 
-/* ===================== */
 /* CARD */
-/* ===================== */
 
 .card {
     width: 90px;
@@ -365,9 +351,7 @@ h1 {
 .card img {
     border-radius: 15px;
 }
-/* ===================== */
 /* SOCIAL BAR */
-/* ===================== */
 
 .social-bar {
     width: 100%;
@@ -395,9 +379,7 @@ h1 {
 }
 
 
-/* ===================== */
 /* COPYRIGHT */
-/* ===================== */
 
 .copyright {
     margin-top: 80px;
@@ -405,9 +387,7 @@ h1 {
     background: #111;
 }
 
-/* ===================== */
 /* RESPONSIVE */
-/* ===================== */
 
 @media (max-width: 768px) {
 
@@ -429,6 +409,7 @@ h1 {
     }
 }
 /* WIN SCREEN */
+
 .win-screen {
     position: fixed;
     top: 0;
@@ -557,9 +538,8 @@ h1 {
     box-shadow: 0 0 25px red;
 }
 
-/* icône *//* ===================== */
+
 /* HEART PRO STYLE */
-/* ===================== */
 
 .heart {
     display: inline-flex;
@@ -609,6 +589,7 @@ h1 {
 }
 
 /* HOVER */
+
 .heart:hover i {
     color: #ff2e2e;
 
