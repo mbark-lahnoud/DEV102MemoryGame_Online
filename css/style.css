@@ -215,22 +215,58 @@ h1 {
     font-size: 16px;
 }
 
-/* BUTTON */
 
-.download-btn {
-    padding: 12px 35px;
-    background: linear-gradient(45deg, red, #ff4d4d);
-    border: none;
-    border-radius: 12px;
-    color: white;
-    cursor: pointer;
-    box-shadow: 0 0 15px red;
-    transition: 0.3s;
+/* BOUTON */
+
+
+/* CENTRAGE */
+.btn-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
 }
 
-.download-btn:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 35px red;
+/* BOUTON */
+.download-btn {
+    position: relative;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    padding: 14px 35px;
+
+    background: #140000;
+    border: 1px solid #6e0000;
+    border-radius: 12px;
+
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+
+    cursor: pointer;
+    transition: all 0.35s ease;
+
+    /* shadow douce */
+    box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.8),
+        0 0 6px rgba(255, 0, 0, 0.1);
+}
+
+/* TEXTE + ICONE AU DESSUS */
+.download-btn span,
+.download-btn img {
+    position: relative;
+    z-index: 3;
+}
+
+/* ICONE */
+.btn-icon {
+    width: 20px;
+    height: 20px;
+    transition: 0.3s ease;
 }
 
 /* STATS */
