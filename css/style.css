@@ -326,6 +326,13 @@ h1 {
 .download-btn:hover {
     border-color: #ff2e2e;
 
+    /* shadow légère + glow doux */
+    box-shadow: 
+        0 6px 18px rgba(0, 0, 0, 0.9),
+        0 0 10px rgba(255, 0, 0, 0.25);
+}
+
+
 /* STATS */
 
 .stats {
