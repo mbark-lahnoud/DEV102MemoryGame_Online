@@ -269,6 +269,63 @@ h1 {
     transition: 0.3s ease;
 }
 
+/* 🔴 REMPLISSAGE PRINCIPAL */
+.download-btn::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 0%;
+    height: 100%;
+
+    background: linear-gradient(
+        90deg,
+        #ff0000,
+        #cc0000,
+        #990000
+    );
+
+    transition: width 0.45s ease;
+    z-index: 1;
+}
+
+/* ✨ EFFET GLOSSY (reflet) */
+.download-btn::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+
+    width: 50%;
+    height: 100%;
+
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255, 255, 255, 0.25),
+        transparent
+    );
+
+    transform: skewX(-25deg);
+    transition: 0.6s;
+    z-index: 2;
+}
+
+/* HOVER → remplissage */
+.download-btn:hover::before {
+    width: 100%;
+}
+
+/* HOVER → reflet qui passe */
+.download-btn:hover::after {
+    left: 130%;
+}
+
+/* HOVER GLOBAL */
+.download-btn:hover {
+    border-color: #ff2e2e;
+
 /* STATS */
 
 .stats {
