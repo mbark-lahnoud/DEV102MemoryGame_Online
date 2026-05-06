@@ -331,6 +331,22 @@ h1 {
         0 6px 18px rgba(0, 0, 0, 0.9),
         0 0 10px rgba(255, 0, 0, 0.25);
 }
+/* TEXTE HOVER */
+.download-btn:hover span {
+    text-shadow: 
+        0 0 6px rgba(255,255,255,0.5);
+}
+
+/* ICONE HOVER */
+.download-btn:hover .btn-icon {
+    transform: scale(1.1);
+    filter: drop-shadow(0 0 5px rgba(255,0,0,0.5));
+}
+
+/* CLICK */
+.download-btn:active {
+    transform: scale(0.96);
+}
 
 
 /* STATS */
