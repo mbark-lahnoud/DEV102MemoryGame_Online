@@ -273,6 +273,16 @@ h1 {
     opacity: 0.4;
 }
 
+.players-input input:focus {
+    animation: pulseInput 2s infinite;
+}
+
+@keyframes pulseInput {
+    0% { box-shadow: 0 0 10px rgba(255,0,0,0.4); }
+    50% { box-shadow: 0 0 25px rgba(255,0,0,0.6); }
+    100% { box-shadow: 0 0 10px rgba(255,0,0,0.4); }
+}
+
 /* BOUTON */
 
 
@@ -283,6 +293,7 @@ h1 {
     align-items: center;
     margin-top: 10px;
 }
+
 
 /* BOUTON */
 .download-btn {
