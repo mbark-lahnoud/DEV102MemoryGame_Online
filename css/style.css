@@ -202,19 +202,76 @@ h1 {
 .multi:hover {
     transform: scale(1.03) rotate(0.5deg);
 }
-
+/* ===================== */
 /* INPUT */
+/* ===================== */
 
-.players-input input {
-    padding: 12px;
-    margin: 10px;
-    border-radius: 10px;
-    border: 2px solid red;
-    background: #111;
-    color: white;
-    font-size: 16px;
+.players-input {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
+.players-input input {
+    padding: 14px 18px;
+    width: 220px;
+
+    border-radius: 14px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+
+    background: #0f0f0f;
+    color: white;
+    font-size: 15px;
+
+    outline: none;
+
+    /* TRANSITION PRO */
+    transition:
+        transform 0.25s ease,
+        box-shadow 0.3s ease,
+        border 0.3s ease,
+        background 0.3s ease;
+
+    /* effet profondeur */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.1);
+}
+
+/* HOVER (léger) */
+.players-input input:hover {
+    transform: scale(1.03);
+    border-color: rgba(255, 0, 0, 0.5);
+}
+
+/* FOCUS (WAWW 🔥) */
+.players-input input:focus {
+    transform: scale(1.07);
+
+    border-color: #ff2e2e;
+
+    box-shadow:
+        0 0 10px rgba(255, 0, 0, 0.4),
+        0 0 25px rgba(255, 0, 0, 0.3),
+        0 0 40px rgba(255, 0, 0, 0.15);
+
+    background: #141414;
+}
+
+/* CLICK (effet bouton) */
+.players-input input:active {
+    transform: scale(0.97);
+}
+
+/* PLACEHOLDER */
+.players-input input::placeholder {
+    color: #888;
+    transition: 0.3s;
+}
+
+/* placeholder diminue au focus */
+.players-input input:focus::placeholder {
+    opacity: 0.4;
+}
 
 /* BOUTON */
 
