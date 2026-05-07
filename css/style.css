@@ -338,6 +338,10 @@ h1 {
     animation: blinkCursor 1s infinite;
 }
 
+.players-input input {
+    text-transform: uppercase;
+}
+
 /* BOUTON */
 
 
