@@ -283,6 +283,61 @@ h1 {
     100% { box-shadow: 0 0 10px rgba(255,0,0,0.4); }
 }
 
+/* ===================== */
+/* INPUT STYLE OLD SCHOOL */
+/* ===================== */
+
+.players-input input {
+    font-family: 'Share Tech Mono', monospace; /* effet code */
+    letter-spacing: 1px;
+
+    padding: 14px 18px;
+    width: 220px;
+
+    border-radius: 12px;
+    border: 1px solid rgba(255, 0, 0, 0.3);
+
+    background: #0b0b0b;
+    color: #ff4d4d;
+
+    outline: none;
+
+    transition: all 0.3s ease;
+}
+
+/* PLACEHOLDER STYLE */
+.players-input input::placeholder {
+    font-family: 'Orbitron', sans-serif;
+    color: rgba(255, 100, 100, 0.5);
+    letter-spacing: 2px;
+}
+
+/* FOCUS */
+.players-input input:focus {
+    color: #ffffff;
+
+    box-shadow:
+        0 0 10px rgba(255, 0, 0, 0.4),
+        0 0 20px rgba(255, 0, 0, 0.2);
+
+    border-color: #ff2e2e;
+}
+
+.players-input input {
+    caret-color: #ff2e2e;
+}
+
+/* effet clignotement style terminal */
+@keyframes blinkCursor {
+    0% { caret-color: #ff2e2e; }
+    50% { caret-color: transparent; }
+    100% { caret-color: #ff2e2e; }
+}
+
+.players-input input:focus {
+    animation: blinkCursor 1s infinite;
+}
+
 /* BOUTON */
 
 
