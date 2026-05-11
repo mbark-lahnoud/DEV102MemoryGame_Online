@@ -202,6 +202,25 @@ h1 {
     filter: drop-shadow(0 0 10px rgba(33,150,243,0.45));
 }
 
+@keyframes rotateFloat{
+
+    0%{
+        transform: translateY(0px) rotate(0deg);
+    }
+    25%{
+        transform: translateY(-4px) rotate(2deg);
+    }
+    50%{
+        transform: translateY(0px) rotate(0deg);
+    }
+    75%{
+        transform: translateY(-4px) rotate(-2deg);
+    }
+    100%{
+        transform: translateY(0px) rotate(0deg);
+    }
+}
+
 /* Animation image plus dynamique */
 @keyframes floatImg{
     0%{
