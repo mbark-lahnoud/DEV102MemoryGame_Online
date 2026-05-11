@@ -200,6 +200,7 @@ h1 {
     height: auto;
 
     filter: drop-shadow(0 0 10px rgba(33,150,243,0.45));
+    animation: rotateFloat 3s ease-in-out infinite;
 }
 
 @keyframes rotateFloat{
