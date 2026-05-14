@@ -254,6 +254,12 @@ h1 {
     flex-wrap: wrap;
     margin-top: 30px;
 }
+/* Petit effet hover élégant */
+.container p:hover{
+    opacity: 1;
+    scale: 1.05;
+    color: #ffffff;
+} 
 
 /* BUTTON BASE */
 
